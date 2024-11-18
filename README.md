@@ -54,43 +54,51 @@ Module 1: Sales Performance Analysis
 
 1.	Total Sales per Month:
 ○	Calculate the total sales amount per month, including the number of units sold and the total revenue generated.
-2.	Average Discount per Month:
+
+3.	Average Discount per Month:
 ○	Calculate the average discount applied to sales in each month and assess how discounting strategies impact total sales.
 
 Module 2: Customer Behavior and Insights
 
 3.	Identify high-value customers:
 ○	Which customers have spent the most on their purchases? Show their details
-4.	Identify the oldest Customer:
+
+5.	Identify the oldest Customer:
 ○	Find the details of customers born in the 1990s, including their total spending and specific order details.
-5.	Customer Segmentation:
+
+7.	Customer Segmentation:
 ○	Use SQL to create customer segments based on their total spending (e.g., Low Spenders, High Spenders).
 
 Module 3: Inventory and Product Management
 
 6.	Stock Management:
 ○	Write a query to find products that are running low in stock (below a threshold like 10 units) and recommend restocking amounts based on past sales performance.
-7.	Inventory Movements Overview:
+
+8.	Inventory Movements Overview:
 ○	Create a report showing the daily inventory movements (restock vs. sales) for each product over a given period.
-8.	Rank Products::
+
+10.	Rank Products::
 ○	Rank products in each category by their prices.
  
 Module 4: Advanced Analytics
 
 9.	Average order size:
 ○	What is the average order size in terms of quantity sold for each product?
-10.	Recent Restock Product:
+
+11.	Recent Restock Product:
 ○	Which products have seen the most recent restocks
 
 Advanced Features to Challenge Students
 
 ●	Dynamic Pricing Simulation: Challenge students to analyze how price changes for products impact sales volume, revenue, and customer behavior.
+
 ●	Customer Purchase Patterns: Analyze purchase patterns using time-series data and window functions to find high-frequency buying behavior.
+
 ●	Predictive Analytics: Use past data to predict which customers are most likely to churn and recommend strategies to retain them.
 
 Final Project Deliverable
 
-●	Students will deliver a comprehensive report that answers the key business questions. They should use advanced SQL features such as:
+●	Deliver a comprehensive report that answers the key business questions. They should use advanced SQL features such as:
 ○	CTEs
 ○	Window Functions
 ○	Subqueries
