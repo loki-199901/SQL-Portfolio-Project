@@ -1,107 +1,100 @@
 # SQL-Portfolio-Project
-SQL project for atomcamp bootcamp
 
+## Project Title: Retail Sales and Customer Insights Analysis
 
-Project Title: Retail Sales and Customer Insights Analysis
+### Project Overview:
+This SQL project focuses on analyzing sales, customer, and product data for a fictional retail company. By using advanced SQL techniques, the goal is to uncover valuable insights such as sales trends, customer segmentation, product profitability, and inventory management efficiency.
 
-Project Overview
+---
 
-Students will analyze sales, customer, and product data for a fictional retail company. They will use advanced SQL techniques to uncover insights such as sales trends, customer segmentation, product profitability, and inventory management efficiency.
-          
-Dataset Description
+### Dataset Description:
 
-1.	Customers Table
+**1. Customers Table**
+- `customer_id` (Primary Key)
+- `first_name`
+- `last_name`
+- `email`
+- `gender`
+- `date_of_birth`
+- `registration_date`
+- `last_purchase_date`
 
-●	customer_id (Primary Key)
-●	first_name
-●	last_name
-●	email
-●	gender
-●	date_of_birth
-●	registration_date
-●	last_purchase_date
+**2. Products Table**
+- `product_id` (Primary Key)
+- `product_name`
+- `category`
+- `price`
+- `stock_quantity` (How many items are left in inventory)
+- `date_added`
 
-2.	Products Table
+**3. Sales Table**
+- `sale_id` (Primary Key)
+- `customer_id` (Foreign Key)
+- `product_id` (Foreign Key)
+- `quantity_sold`
+- `sale_date`
+- `discount_applied` (Percentage Discount)
+- `total_amount` (Price * quantity_sold * discount_applied)
 
-●	product_id (Primary Key)
-●	product_name
-●	category
-●	price
-●	stock_quantity (How many items are left in inventory)
-●	date_added
+**4. Inventory Movements Table**
+- `movement_id` (Primary Key)
+- `product_id` (Foreign Key)
+- `movement_type` ('IN' for restock, 'OUT' for sales)
+- `quantity_moved`
+- `movement_date`
 
-3.	Sales Table
+---
 
-●	sale_id (Primary Key)
-●	customer_id (Foreign Key)
-●	product_id (Foreign Key)
-●	quantity_sold
-●	sale_date
-●	discount_applied (Percentage Discount)
-●	total_amount (Price * quantity_sold * discount_applied)
- 
-4.	Inventory Movements Table
+### Key Objectives and Questions:
 
-●	movement_id (Primary Key)
-●	product_id (Foreign Key)
-●	movement_type ('IN' for restock, 'OUT' for sales)
-●	quantity_moved
-●	movement_date
+#### Module 1: Sales Performance Analysis
+1. **Total Sales per Month:**
+   - Calculate the total sales amount per month, including the number of units sold and the total revenue generated.
 
-Key Objectives and Questions
+2. **Average Discount per Month:**
+   - Calculate the average discount applied to sales in each month and assess how discounting strategies impact total sales.
 
-Module 1: Sales Performance Analysis
+#### Module 2: Customer Behavior and Insights
+3. **Identify High-Value Customers:**
+   - Identify customers who have spent the most on their purchases and display their details.
 
-1.	Total Sales per Month:
-○	Calculate the total sales amount per month, including the number of units sold and the total revenue generated.
+4. **Identify the Oldest Customer:**
+   - Find the details of customers born in the 1990s, including their total spending and specific order details.
 
-3.	Average Discount per Month:
-○	Calculate the average discount applied to sales in each month and assess how discounting strategies impact total sales.
+5. **Customer Segmentation:**
+   - Use SQL to create customer segments based on total spending (e.g., Low Spenders, High Spenders).
 
-Module 2: Customer Behavior and Insights
+#### Module 3: Inventory and Product Management
+6. **Stock Management:**
+   - Write a query to find products that are running low in stock (below a threshold like 10 units) and recommend restocking amounts based on past sales performance.
 
-3.	Identify high-value customers:
-○	Which customers have spent the most on their purchases? Show their details
+7. **Inventory Movements Overview:**
+   - Create a report showing the daily inventory movements (restock vs. sales) for each product over a given period.
 
-5.	Identify the oldest Customer:
-○	Find the details of customers born in the 1990s, including their total spending and specific order details.
+8. **Rank Products:**
+   - Rank products in each category by their prices.
 
-7.	Customer Segmentation:
-○	Use SQL to create customer segments based on their total spending (e.g., Low Spenders, High Spenders).
+#### Module 4: Advanced Analytics
+9. **Average Order Size:**
+   - Determine the average order size in terms of quantity sold for each product.
 
-Module 3: Inventory and Product Management
+10. **Recent Restock Product:**
+   - Identify products that have seen the most recent restocks.
 
-6.	Stock Management:
-○	Write a query to find products that are running low in stock (below a threshold like 10 units) and recommend restocking amounts based on past sales performance.
+---
 
-8.	Inventory Movements Overview:
-○	Create a report showing the daily inventory movements (restock vs. sales) for each product over a given period.
+### Advanced Features to Challenge Students:
+- **Dynamic Pricing Simulation:** Analyze how price changes for products impact sales volume, revenue, and customer behavior.
+- **Customer Purchase Patterns:** Use time-series data and window functions to analyze purchase patterns and identify high-frequency buying behavior.
+- **Predictive Analytics:** Use past data to predict which customers are most likely to churn and recommend strategies for retention.
 
-10.	Rank Products::
-○	Rank products in each category by their prices.
- 
-Module 4: Advanced Analytics
+---
 
-9.	Average order size:
-○	What is the average order size in terms of quantity sold for each product?
-
-11.	Recent Restock Product:
-○	Which products have seen the most recent restocks
-
-Advanced Features to Challenge Students
-
-●	Dynamic Pricing Simulation: Challenge students to analyze how price changes for products impact sales volume, revenue, and customer behavior.
-
-●	Customer Purchase Patterns: Analyze purchase patterns using time-series data and window functions to find high-frequency buying behavior.
-
-●	Predictive Analytics: Use past data to predict which customers are most likely to churn and recommend strategies to retain them.
-
-Final Project Deliverable
-
-●	Deliver a comprehensive report that answers the key business questions. They should use advanced SQL features such as:
-○	CTEs
-○	Window Functions
-○	Subqueries
-○	JOINs
-○	Aggregation (SUM, AVG, COUNT)
-○	GROUP BY and HAVING
+### Final Project Deliverable:
+- Deliver a comprehensive report that answers the key business questions, utilizing advanced SQL features such as:
+  - CTEs (Common Table Expressions)
+  - Window Functions
+  - Subqueries
+  - JOINs
+  - Aggregation (SUM, AVG, COUNT)
+  - GROUP BY and HAVING
