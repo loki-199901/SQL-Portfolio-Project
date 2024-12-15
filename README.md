@@ -1,4 +1,4 @@
-# SQL-Portfolio-Project
+# SQL-Project
 
 ## Project Title: Retail Sales and Customer Insights Analysis
 
